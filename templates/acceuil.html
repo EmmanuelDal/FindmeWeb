@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %}Audit{% endblock title %} </title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static', filename='acceuil.css')}}" type="text/css">
+
+</head>
+
+<body>
+
+<div class="container hautpage">
+    <div class="col-md-3">
+
+
+    </div>
+    <div class="col-md-6">
+        <p class="im">Audit de Site Web</p>
+        <p class="audit">Intelligence Multimedia</p>
+    </div>
+    <div class="col-md-3">
+
+
+    </div>
+</div>
+
+
+
+<div class="container">
+
+    <form class="formulaire" method="post" action="">
+        <p>
+            <input type="text" name="valeur" placeholder="Entrez votre site web" class="searchform">
+            <input type="submit" value="" class="search-button fa fa-search">
+        </p>
+    </form>
+
+    <p class="description">Obtenir les informations relatives à votre site web à<br>
+       partir du nom de domaine: IP - Serveurs DNS & Mails...
+    </p>
+</div>
+
+<div>
+    <img src="{{url_for('static', filename='img/website-scan.gif')}}" alt="website-scan" class="img-responsive">
+</div>
+
+
+
+<footer class="footerim">
+
+    <div class="container footertop">
+        <div class="col-md-3 logo ">
+            logo Intelligence Multimédia <br>
+            <img src="{{url_for('static', filename='img/scan.png')}}" alt="website-scan" class="img-responsive">
+        </div>
+
+        <div class="col-md-3">
+            <h4>Contactez-nous</h4>
+
+                <p class="fa fa-map-marker"> Cocody, Abidjan, Côte d'Ivoire</p>
+                <p class="fa fa-phone"> (+225) xx xx xx xx</p>
+                <p class="fa fa-envelope"> contact@intelligence.ci</p>
+        </div>
+
+        <div class="col-md-3">
+            <h4>Nous suivre</h4>
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3 ">
+            Intelligence Multimédia est une entreprise web,
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Animi aspernatur
+        </div>
+    </div>
+
+    <div class="space"></div>
+    <div class="container ">
+        <p class="copyrightim">Realisé par Intelligence Multimedia, Copyright &copy 2017.</p>
+    </div>
+</footer>
+<!-- appel javascript-->
+
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery-2.2.0.min.js')}}"></script>
+
+<!-- fin javascript-->
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %}{% endblock title %} </title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static', filename='acceuil.css')}}" type="text/css">
+
+</head>
+
+<body>
+
+<div class="container hautpage">
+    <div class="col-md-3">
+
+
+    </div>
+    <div class="col-md-6">
+        <p class="im">Audit de Site Web</p>
+        <p class="audit">Intelligence Multimedia</p>
+    </div>
+    <div class="col-md-3">
+
+
+    </div>
+</div>
+
+    <div class="message_500">
+        {% block message_500 %}
+
+        {% endblock%}
+    </div>
+
+    <div class="message_400">
+        {% block message_400 %}
+
+        {% endblock%}
+    </div>
+
+
+
+<footer class="footerim" style="margin-top: 74px;">
+
+    <div class="container footertop">
+        <div class="col-md-3 logo ">
+            logo Intelligence Multimédia <br>
+            <img src="{{url_for('static', filename='img/scan.png')}}" alt="website-scan" class="img-responsive">
+        </div>
+
+        <div class="col-md-3">
+            <h4>Contactez-nous</h4>
+
+                <p class="fa fa-map-marker"> Cocody, Abidjan, Côte d'Ivoire</p>
+                <p class="fa fa-phone"> (+225) xx xx xx xx</p>
+                <p class="fa fa-envelope"> contact@intelligence.ci</p>
+        </div>
+
+        <div class="col-md-3">
+            <h4>Nous suivre</h4>
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3 ">
+            Intelligence Multimédia est une entreprise web,
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Animi aspernatur
+        </div>
+    </div>
+
+    <div class="space"></div>
+    <div class="container ">
+        <p class="copyrightim">Realisé par Intelligence Multimedia, Copyright &copy 2017.</p>
+    </div>
+</footer>
+<!-- appel javascript-->
+
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+
+<!-- fin javascript-->
+
+</body>
+</html>

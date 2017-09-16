@@ -1,0 +1,33 @@
+{% extends "erreurs/erreur_layout.html" %}
+
+{% block title%}Erreur-400{% endblock title%}
+
+<link rel="stylesheet" href="{{url_for('static', filename='erreur_400.css')}}" type="text/css">
+
+{% block message_400 %}
+
+    <div class="container message_400">
+        <h3 class="desole">
+            Contenu Introuvable<br>
+            Veuillez ressayer ou verifiez votre url<br>
+        </h3>
+    </div>
+
+
+    <!-- debut formulaire-->
+    <div class="container">
+
+        <form class="formulaire" method="post" action="">
+            <p>
+                <input type="text" name="valeur" placeholder="Entrez votre site web" class="searchform">
+                <input type="submit" value="" class="search-button fa fa-search">
+            </p>
+        </form>
+
+        <p class="description">Obtenir les informations relatives à votre site web à<br>
+           partir du nom de domaine: IP - Serveurs DNS & Mails...
+        </p>
+    </div>
+
+    <!-- fin formulaire-->
+{% endblock %}

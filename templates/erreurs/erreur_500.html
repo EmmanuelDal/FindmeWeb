@@ -1,0 +1,34 @@
+{% extends "erreurs/erreur_layout.html" %}
+
+{% block title%}Erreure-500{% endblock title%}
+
+<link rel="stylesheet" href="{{url_for('static', filename='erreur_500.css')}}" type="text/css">
+
+{% block message_500 %}
+
+    <div class="container message_500">
+        <h3 class="desole">
+            L'adresse entrée <strong>{{url}}</strong> est invalide ou les parametres reseaux sont incorrects.<br>
+            La requête ne peut être traitée.<br>
+            Veuillez entrer une adresse valide ou verifier vos parametres reseaux!
+        </h3>
+    </div>
+
+
+    <!-- debut formulaire-->
+    <div class="container">
+
+        <form class="formulaire" method="post" action="">
+            <p>
+                <input type="text" name="valeur" placeholder="Entrez votre site web" class="searchform">
+                <input type="submit" value="" class="search-button fa fa-search">
+            </p>
+        </form>
+
+        <p class="description">Obtenir les informations relatives à votre site web à<br>
+           partir du nom de domaine: IP - Serveurs DNS & Mails...
+        </p>
+    </div>
+
+    <!-- fin formulaire-->
+{% endblock %}

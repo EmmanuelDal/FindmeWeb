@@ -1,0 +1,70 @@
+{% extends "layout.html" %} <!--herite des proprietes de la page layout.html-->
+
+{%block title%}Audit-Resultat{%endblock title%}
+
+{%block ipv_4%}
+  <ul>
+    <li>
+        Adresse IPV4 de {{msg}}: {{ip4}}
+    </li>
+  </ul>
+{%endblock%}
+
+{%block localisation%}
+    {% for val, val1 in sta1.items() %}
+        <ul>
+            <li>{{ val }} : {{ val1 }}</li>
+        </ul>
+    {% endfor %}
+{%endblock%}
+
+
+{%block Asn%}
+    {% for asn1, asn_1 in asn1_1.items() %}
+        <ul>
+            <li>{{ asn1}} : {{ asn_1 }}</li>
+        </ul>
+    {% endfor %}
+{%endblock%}
+
+{% block whois_a %}
+    {%for w1, w_1 in wh1.items()%}
+    <ul>
+        <li>
+            {{ w1 }}:{{ w_1 }}
+        </li>
+    </ul>
+    {% endfor %}
+{% endblock %}
+
+{%block serveur_mail%}
+    {% for rdata in repnse %}
+        <ul>
+            <li>
+                [+]Serveur mail(s): {{ rdata.exchange }}
+            </li>
+        </ul>
+    {% endfor %}
+{%endblock%}
+
+
+{%block serveur_dns%}
+    {% for resultat in contenu %}
+        <ul>
+            <li>
+                [*]serveur DNS: {{ resultat }}
+            </li>
+        </ul>
+    {% endfor %}
+{%endblock%}
+
+
+{% block banner_server_http %}
+    {% for repnse1, repnse2 in url_result.items() %}
+        <ul>
+            <li>
+                {{ repnse1 }}:{{ repnse2 }}
+            </li>
+        </ul>
+    {% endfor %}
+ {% endblock%}
