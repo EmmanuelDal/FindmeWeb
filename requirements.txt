@@ -11,7 +11,7 @@ geopy==1.11.0
 gunicorn==19.4.5
 ipaddress==1.0.17
 ipdetailscache==0.4.8
-Jinja2==2.9.6
+Jinja2==2.11.3
 Localization==0.1.4
 MarkupSafe==1.0
 MongoAlchemy==0.21
