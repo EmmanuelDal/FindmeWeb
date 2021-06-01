@@ -30,5 +30,5 @@ sqlalchemy-mixins==0.1.4
 Werkzeug==0.12.2
 whois==0.7
 ipwhois==1.0.0
-urllib3==1.21.1
+urllib3==1.26.5
 folium==0.3.0
